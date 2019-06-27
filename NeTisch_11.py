@@ -34,32 +34,28 @@ class NavCan(NavCanvas.NavCanvas):
                     ll=int(T[room]["length"])
                     bb=int(T[room]["breadth"])
 
-                    drline1 = FloatCanvas.Line([(xx,yy),(xx+ll,yy)],LineWidth=4,
-                                              LineColor='black')
+                    drline1 = FloatCanvas.Line([(xx,yy),(xx+ll,yy)],LineWidth=4,LineColor='black')
                     self.Canvas.AddObject(drline1)
                     self.Canvas.Draw()
-                    drline2 = FloatCanvas.Line([(xx,yy),(xx,yy+bb)],LineWidth=4,
-                                              LineColor='black')
+                    drline2 = FloatCanvas.Line([(xx,yy),(xx,yy+bb)],LineWidth=4,LineColor='black')
                     self.Canvas.AddObject(drline2)
                     self.Canvas.Draw()
-                    drline3 = FloatCanvas.Line([(xx+ll,yy),(xx+ll,yy+bb)],LineWidth=4,
-                                              LineColor='black')
+                    drline3 = FloatCanvas.Line([(xx+ll,yy),(xx+ll,yy+bb)],LineWidth=4,LineColor='black')
                     self.Canvas.AddObject(drline3)
                     self.Canvas.Draw()
-                    drline4 = FloatCanvas.Line([(xx,yy+bb),(xx+ll,yy+bb)],LineWidth=4,
-                                              LineColor='black')
+                    drline4 = FloatCanvas.Line([(xx,yy+bb),(xx+ll,yy+bb)],LineWidth=4,LineColor='black')
                     self.Canvas.AddObject(drline4)
                     self.Canvas.Draw()
                 self.Canvas.Draw()
-                
                 if par == "nodes":
                     for i in range(len(T[room]["nodes"])):
                         for node_par,node_val in T[room][par][i].items():
                             if T[room][par][i]["type"] == "s":
-                                cir = FloatCanvas.Circle((int(T[room][par][i]["node_pos_x"]),int(T[room][par][i]["node_pos_y"])),4,FillColor = 'red')
+                                cir = FloatCanvas.Circle([int(T[room][par][i]["node_pos_x"]),int(T[room][par][i]["node_pos_y"])],7,FillColor = 'red')
                                 self.Canvas.AddObject(cir)
-                                self.Canvas.Draw()
-
+                            if T[room][par][i]["type"] == "p":
+                                rect = FloatCanvas.Rectangle([int(T[room][par][i]["node_pos_x"]),int(T[room][par][i]["node_pos_y"])],(8,8),FillColor='blue')
+                                self.Canvas.AddObject(rect)
                             if T[room][par][i]["type"] == "k":
                                 poly = FloatCanvas.Polygon([(int(T[room][par][i]["node_pos_x"])-4,int(T[room][par][i]["node_pos_y"])-4),
                                                             (int(T[room][par][i]["node_pos_x"])+4,int(T[room][par][i]["node_pos_y"])-4),
@@ -67,14 +63,14 @@ class NavCan(NavCanvas.NavCanvas):
                                                             (int(T[room][par][i]["node_pos_x"])-4,int(T[room][par][i]["node_pos_y"])+4)],
                                                            FillColor='yellow')
                                 self.Canvas.AddObject(poly)
-                                self.Canvas.Draw()
                             if T[room][par][i]["type"] == "r":
                                 poly1 = FloatCanvas.Polygon([(int(T[room][par][i]["node_pos_x"]),int(T[room][par][i]["node_pos_y"])-7),
                                                              (int(T[room][par][i]["node_pos_x"])-7,int(T[room][par][i]["node_pos_y"])+7),
                                                              (int(T[room][par][i]["node_pos_x"])+7,int(T[room][par][i]["node_pos_y"])+7)],
                                                             FillColor='cyan')
                                 self.Canvas.AddObject(poly1)
-                                self.Canvas.Draw()
+                    self.Canvas.Draw()
+
             if room == "Blank_Area":
                 points = [(int(T[room]['x1']),int(T[room]['y1'])),
                           (int(T[room]['x2']),int(T[room]['y2'])),
@@ -87,9 +83,7 @@ class NavCan(NavCanvas.NavCanvas):
                           (int(T[room]['x9']),int(T[room]['y9'])),
                           (int(T[room]['x10']),int(T[room]['y10'])),
                           (int(T[room]['x11']),int(T[room]['y11']))]
-                blankarea = FloatCanvas.Polygon(points,
-                                                LineWidth=4,
-                                                LineColor='black')
+                blankarea = FloatCanvas.Polygon(points,LineWidth=4,LineColor='black',FillColor = "SKY BLUE" , FillStyle='Solid')
                 self.Canvas.AddObject(blankarea)
 
             self.Canvas.Draw()
@@ -142,6 +136,9 @@ class PanelFrame(wx.Panel):
         sizer.Add(sbsizer, pos=(14, 0), span=(1, 12), flag=wx.EXPAND|wx.TOP|wx.LEFT|wx.RIGHT , border=10)
         self.Bind(wx.EVT_COMBOBOX,self.OnSchedule,combo4)
 
+        self.SetSizer(sizer)
+        self.Show()
+        
     def OnGenCQ(self,event):
         self.SetStatusText("Current Option : Gen C.Q - "+ event.GetEventObject().GetStringSelection())
 
@@ -198,7 +195,7 @@ class MyFrame(wx.Frame):
         aboutmenu = help_menu.Append(wx.ID_ABOUT,'About NeTisch','About NeTisch')
         menubar.Append(help_menu, '&Help')
         self.SetMenuBar(menubar)
-        self.SetSize(900,900)
+        self.SetSize(1370,750)
         self.Centre()
 
         ## Creating Iconbar
@@ -217,11 +214,13 @@ class MyFrame(wx.Frame):
         rightP = PanelFrame(splitter)
         
         splitter.SplitVertically(leftP,rightP)
-        splitter.SetMinimumPaneSize(30)
+##        splitter.SetMinimumPaneSize(30)
+        leftP.SetSize(1270,750)
+        rightP.SetSize(100,750)
         
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(splitter,1,wx.EXPAND)
-##        self.SetSizer(sizer)
+        self.SetSizer(sizer)
 
 
 if __name__ == "__main__":
