@@ -1,0 +1,121 @@
+{ "Room A" :	{
+		"length" : "240", 
+		"breadth" : "230", 
+		"topright_pos_x" : "10", 
+		"topright_pos_y" : "10",
+		"Nodes" :	[
+				{"node_id" : "1001", "node_pos_x" : "40", "node_pos_y" : "100", "node_power" : "20dBm","type" : "s"},
+				{"node_id" : "1002", "node_pos_x" : "125", "node_pos_y" : "30", "node_power" : "40dBm","type" : "s"},
+				{"node_id" : "1003", "node_pos_x" : "225", "node_pos_y" : "95", "node_power" : "30dBm","type" : "s"},
+				{"node_id" : "1004", "node_pos_x" : "220", "node_pos_y" : "230", "node_power" : "30dBm","type" : "r"}
+			]
+		},
+	"Room B" :		{
+		"length" : "150",
+		"breadth" : "50",
+		"topright_pos_x" : "10",
+		"topright_pos_y" : "130",
+                "Nodes" :	[
+                                		{"node_id" : "1005", "node_pos_x" : "130", "node_pos_y" : "140", "node_power" : "40dBm","type" : "p"},
+                                		{"node_id" : "1006", "node_pos_x" : "50", "node_pos_y" : "170", "node_power" : "30dBm","type" : "p"}
+					]
+		},
+	"Room C" :	{
+		"length" : "150", 
+		"breadth" : "60", 
+		"topright_pos_x" : "10", 
+		"topright_pos_y" : "180"
+		},
+	"Room D" :	{
+		"length" : "200", 
+		"breadth" : "140", 
+		"topright_pos_x" : "10", 
+		"topright_pos_y" : "240",
+		"Nodes" :	[
+				{"node_id" : "1007", "node_pos_x" : "150", "node_pos_y" : "250", "node_power" : "20dBm","type" : "p"},
+				{"node_id" : "1008", "node_pos_x" : "30", "node_pos_y" : "330", "node_power" : "40dBm","type" : "p"},
+				{"node_id" : "1009", "node_pos_x" : "180", "node_pos_y" : "330", "node_power" : "30dBm","type" : "p"}
+			]
+		},
+	"Room E" :	{
+		"length" : "200", 
+		"breadth" : "95", 
+		"topright_pos_x" : "10", 
+		"topright_pos_y" : "380"
+		},
+	"Room F" :	{
+		"length" : "240", 
+		"breadth" : "115", 
+		"topright_pos_x" : "10", 
+		"topright_pos_y" : "475",
+		"Nodes" :	[
+				{"node_id" : "1010", "node_pos_x" : "150", "node_pos_y" : "560", "node_power" : "20dBm","type" : "s"},
+				{"node_id" : "1011", "node_pos_x" : "225", "node_pos_y" : "540", "node_power" : "40dBm","type" : "r"}
+			]
+		},
+	"Room G" :	{
+		"length" : "125", 
+		"breadth" : "115", 
+		"topright_pos_x" : "250", 
+		"topright_pos_y" : "475",
+		"Nodes" :	[
+				{"node_id" : "1012", "node_pos_x" : "270", "node_pos_y" : "475", "node_power" : "20dBm","type" : "r"},
+				{"node_id" : "1013", "node_pos_x" : "360", "node_pos_y" : "490", "node_power" : "40dBm","type" : "p"},
+				{"node_id" : "1014", "node_pos_x" : "260", "node_pos_y" : "550", "node_power" : "30dBm","type" : "s"},
+				{"node_id" : "1015", "node_pos_x" : "280", "node_pos_y" : "580", "node_power" : "30dBm","type" : "k"}
+			]
+		},
+	"Room H" :	{
+		"length" : "125", 
+		"breadth" : "115", 
+		"topright_pos_x" : "375", 
+		"topright_pos_y" : "475",
+		"Nodes" :	[
+				{"node_id" : "1016", "node_pos_x" : "385", "node_pos_y" : "500", "node_power" : "20dBm","type" : "r"},
+				{"node_id" : "1017", "node_pos_x" : "400", "node_pos_y" : "485", "node_power" : "40dBm","type" : "p"},
+				{"node_id" : "1018", "node_pos_x" : "460", "node_pos_y" : "570", "node_power" : "30dBm","type" : "p"}
+			]
+		},
+	"Room J" :	{
+		"Nodes" :	[
+				{"node_id" : "1019", "node_pos_x" : "240", "node_pos_y" : "320", "node_power" : "20dBm","type" : "r"},
+				{"node_id" : "1020", "node_pos_x" : "220", "node_pos_y" : "465", "node_power" : "40dBm","type" : "p"},
+				{"node_id" : "1021", "node_pos_x" : "320", "node_pos_y" : "410", "node_power" : "30dBm","type" : "p"},
+				{"node_id" : "1022", "node_pos_x" : "480", "node_pos_y" : "450", "node_power" : "30dBm","type" : "p"},
+				{"node_id" : "1023", "node_pos_x" : "535", "node_pos_y" : "410", "node_power" : "30dBm","type" : "p"},
+				{"node_id" : "1024", "node_pos_x" : "510", "node_pos_y" : "565", "node_power" : "30dBm","type" : "r"},
+				{"node_id" : "1025", "node_pos_x" : "550", "node_pos_y" : "560", "node_power" : "30dBm","type" : "p"},
+				{"node_id" : "1026", "node_pos_x" : "530", "node_pos_y" : "490", "node_power" : "30dBm","type" : "p"},
+				{"node_id" : "1027", "node_pos_x" : "550", "node_pos_y" : "360", "node_power" : "30dBm","type" : "s"},
+				{"node_id" : "1028", "node_pos_x" : "580", "node_pos_y" : "300", "node_power" : "30dBm","type" : "p"},
+				{"node_id" : "1029", "node_pos_x" : "790", "node_pos_y" : "410", "node_power" : "30dBm","type" : "s"}
+			]
+		},
+	"Room K" :	{
+		"length" : "330", 
+		"breadth" : "115", 
+		"topright_pos_x" : "560", 
+		"topright_pos_y" : "475",
+		"Nodes" :	[
+				{"node_id" : "1030", "node_pos_x" : "600", "node_pos_y" : "540", "node_power" : "20dBm","type" : "r"},
+				{"node_id" : "1031", "node_pos_x" : "650", "node_pos_y" : "580", "node_power" : "40dBm","type" : "s"},
+				{"node_id" : "1032", "node_pos_x" : "780", "node_pos_y" : "490", "node_power" : "30dBm","type" : "r"}
+			]
+		},
+	"Room L" :	{
+		"length" : "100", 
+		"breadth" : "100", 
+		"topright_pos_x" : "600", 
+		"topright_pos_y" : "300",
+		"Nodes" :	[
+				{"node_id" : "1033", "node_pos_x" : "620", "node_pos_y" : "320", "node_power" : "20dBm","type" : "s"},
+				{"node_id" : "1034", "node_pos_x" : "685", "node_pos_y" : "385", "node_power" : "40dBm","type" : "p"}
+			]
+		},
+	"Blank_Area" : {
+		"x1" : "250", "y1" : "240", "x2" : "250", "y2" : "400", "x3" : "545", "y3" : "400", "x4" : "545", "y4" : "250",
+		"x5" : "600", "y5" : "250", "x6" : "600", "y6" : "300", "x7" : "700", "y7" : "300", "x8" : "700", "y8" : "400",
+		"x9" : "890", "y9" : "400", "x10" : "890", "y10" : "10", "x11" : "250", "y11" : "10"
+		}
+}
+
