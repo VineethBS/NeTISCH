@@ -1,0 +1,121 @@
+{ "Room A" :	{
+		"length" : 240, 
+		"breadth" : 230, 
+		"topright_pos_x" : 10, 
+		"topright_pos_y" : 10,
+		"Nodes" :	[
+				{"id" : 1, "posx" : 40, "posy" : 100, "node_power" : "20dBm","type" : "S"},
+				{"id" : 2, "posx" : 125, "posy" : 30, "node_power" : "40dBm","type" : "S"},
+				{"id" : 3, "posx" : 225, "posy" : 95, "node_power" : "30dBm","type" : "S"},
+				{"id" : 4, "posx" : 220, "posy" : 230, "node_power" : "30dBm","type" : "R"}
+			]
+		},
+	"Room B" :		{
+		"length" : 150,
+		"breadth" : 50,
+		"topright_pos_x" : 10,
+		"topright_pos_y" : 130,
+                "Nodes" :	[
+                                		{"id" : 5, "posx" : 130, "posy" : 140, "node_power" : "40dBm","type" : "R"},
+                                		{"id" : 6, "posx" : 50, "posy" : 170, "node_power" : "30dBm","type" : "R"}
+					]
+		},
+	"Room C" :	{
+		"length" : 150, 
+		"breadth" : 60, 
+		"topright_pos_x" : 10, 
+		"topright_pos_y" : 180
+		},
+	"Room D" :	{
+		"length" : 200, 
+		"breadth" : 140, 
+		"topright_pos_x" : 10, 
+		"topright_pos_y" : 240,
+		"Nodes" :	[
+				{"id" : 7, "posx" : 150, "posy" : 250, "node_power" : "20dBm","type" : "R"},
+				{"id" : 8, "posx" : 30, "posy" : 330, "node_power" : "40dBm","type" : "R"},
+				{"id" : 9, "posx" : 180, "posy" : 330, "node_power" : "30dBm","type" : "R"}
+			]
+		},
+	"Room E" :	{
+		"length" : 200, 
+		"breadth" : 95, 
+		"topright_pos_x" : 10, 
+		"topright_pos_y" : 380
+		},
+	"Room F" :	{
+		"length" : 240, 
+		"breadth" : 115, 
+		"topright_pos_x" : 10, 
+		"topright_pos_y" : 475,
+		"Nodes" :	[
+				{"id" : 10, "posx" : 150, "posy" : 560, "node_power" : "20dBm","type" : "S"},
+				{"id" : 11, "posx" : 225, "posy" : 540, "node_power" : "40dBm","type" : "R"}
+			]
+		},
+	"Room G" :	{
+		"length" : 125, 
+		"breadth" : 115, 
+		"topright_pos_x" : 250, 
+		"topright_pos_y" : 475,
+		"Nodes" :	[
+				{"id" : 12, "posx" : 270, "posy" : 475, "node_power" : "20dBm","type" : "R"},
+				{"id" : 13, "posx" : 360, "posy" : 490, "node_power" : "40dBm","type" : "R"},
+				{"id" : 14, "posx" : 260, "posy" : 550, "node_power" : "30dBm","type" : "S"},
+				{"id" : 15, "posx" : 280, "posy" : 580, "node_power" : "30dBm","type" : "BS"}
+			]
+		},
+	"Room H" :	{
+		"length" : 125, 
+		"breadth" : 115, 
+		"topright_pos_x" : 375, 
+		"topright_pos_y" : 475,
+		"Nodes" :	[
+				{"id" : 16, "posx" : 385, "posy" : 500, "node_power" : "20dBm","type" : "R"},
+				{"id" : 17, "posx" : 400, "posy" : 485, "node_power" : "40dBm","type" : "R"},
+				{"id" : 18, "posx" : 460, "posy" : 570, "node_power" : "30dBm","type" : "R"}
+			]
+		},
+	"Room J" :	{
+		"Nodes" :	[
+				{"id" : 19, "posx" : 240, "posy" : 320, "node_power" : "20dBm","type" : "R"},
+				{"id" : 20, "posx" : 220, "posy" : 465, "node_power" : "40dBm","type" : "R"},
+				{"id" : 21, "posx" : 320, "posy" : 410, "node_power" : "30dBm","type" : "R"},
+				{"id" : 22, "posx" : 480, "posy" : 450, "node_power" : "30dBm","type" : "R"},
+				{"id" : 23, "posx" : 535, "posy" : 410, "node_power" : "30dBm","type" : "R"},
+				{"id" : 24, "posx" : 510, "posy" : 565, "node_power" : "30dBm","type" : "R"},
+				{"id" : 25, "posx" : 550, "posy" : 560, "node_power" : "30dBm","type" : "R"},
+				{"id" : 26, "posx" : 530, "posy" : 490, "node_power" : "30dBm","type" : "R"},
+				{"id" : 27, "posx" : 550, "posy" : 360, "node_power" : "30dBm","type" : "S"},
+				{"id" : 28, "posx" : 580, "posy" : 300, "node_power" : "30dBm","type" : "R"},
+				{"id" : 29, "posx" : 790, "posy" : 410, "node_power" : "30dBm","type" : "S"}
+			]
+		},
+	"Room K" :	{
+		"length" : 330, 
+		"breadth" : 115, 
+		"topright_pos_x" : 560, 
+		"topright_pos_y" : 475,
+		"Nodes" :	[
+				{"id" : 30, "posx" : 600, "posy" : 540, "node_power" : "20dBm","type" : "R"},
+				{"id" : 31, "posx" : 650, "posy" : 580, "node_power" : "40dBm","type" : "S"},
+				{"id" : 32, "posx" : 780, "posy" : 490, "node_power" : "30dBm","type" : "R"}
+			]
+		},
+	"Room L" :	{
+		"length" : 100, 
+		"breadth" : 100, 
+		"topright_pos_x" : 600, 
+		"topright_pos_y" : 300,
+		"Nodes" :	[
+				{"id" : 33, "posx" : 620, "posy" : 320, "node_power" : "20dBm","type" : "S"},
+				{"id" : 34, "posx" : 685, "posy" : 385, "node_power" : "40dBm","type" : "R"}
+			]
+		},
+	"Blank_Area" : {
+		"x1" : "250", "y1" : "240", "x2" : "250", "y2" : "400", "x3" : "545", "y3" : "400", "x4" : "545", "y4" : "250",
+		"x5" : "600", "y5" : "250", "x6" : "600", "y6" : "300", "x7" : "700", "y7" : "300", "x8" : "700", "y8" : "400",
+		"x9" : "890", "y9" : "400", "x10" : "890", "y10" : "10", "x11" : "250", "y11" : "10"
+		}
+}
+
