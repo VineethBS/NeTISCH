@@ -7,6 +7,7 @@ import wx
 import json
 from wx.lib.floatcanvas import FloatCanvas,NavCanvas,Resources
 import math
+from scipy.spatial import distance
 
 drop1 = ['drop1_sel1','drop1_sel2','drop1_sel3','drop1_sel4','drop1_sel5']
 drop2 = ['drop2_sel1','drop2_sel2','drop2_sel3','drop2_sel4','drop2_sel5']
@@ -28,10 +29,11 @@ class NavCan(NavCanvas.NavCanvas):
         self.Canvas.Bind(FloatCanvas.EVT_LEFT_DOWN,self.OnClickLeft)
 
     # Finding distance between two nodes
-    def distance(self,a1,b1,a2,b2):
+    def distance_calc(self,a1,b1,a2,b2):
         x_temp = (a1-a2) ** 2
         y_temp = (b1-b2) ** 2
-        dist = math.sqrt(x_temp + y_temp)
+##        dist = math.sqrt(x_temp + y_temp)
+        dist = distance.euclidean((a1,b1),(a2,b2))
         return(dist)
 
     def OnClickLeft(self,event):
@@ -103,7 +105,7 @@ class NavCan(NavCanvas.NavCanvas):
         # Making edges for distances < 100 between two nodes
         for i in range (len(N)):
             for j in range (len(N)):
-                dist = self.distance(X[i],-Y[i],X[j],-Y[j])
+                dist = self.distance_calc(X[i],-Y[i],X[j],-Y[j])
                 if dist < 100:
                     self.Canvas.AddObject(FloatCanvas.Line([(X[i],-Y[i]),(X[j],-Y[j])], LineColor = 'Black', LineStyle='Solid',LineWidth=1))
         self.Canvas.Draw()
