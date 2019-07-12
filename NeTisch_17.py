@@ -97,7 +97,8 @@ class NavCan(NavCanvas.NavCanvas):
 
                 blankarea = FloatCanvas.Polygon(points,LineWidth=4,LineColor='black',FillColor = "#95bce7" , FillStyle='Solid')
                 self.Canvas.AddObject(blankarea)
-##                    self.Canvas.Draw()
+        self.Canvas.Draw()
+        self.Canvas.ZoomToBB()
 
 
 # Drawing lines for shortest distances between two nodes
